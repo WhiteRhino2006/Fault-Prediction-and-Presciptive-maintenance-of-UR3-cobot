@@ -1,0 +1,221 @@
+﻿start=5252 J0 No action    peak=4.98C over=101s work=10.00 pace=1.00
+start=5252 J0 Rule-based   peak=2.90C over= 40s work=4.83 pace=0.44
+start=5252 J0 PI only      peak=3.34C over= 94s work=6.38 pace=0.60
+start=5252 J0 PI + thermal guard peak=2.22C over=  6s work=4.96 pace=0.45
+start=5252 J0 Full (ours)  peak=2.16C over=  3s work=4.96 pace=0.45
+start=5252 J0 Full + Markov game peak=2.16C over=  3s work=4.96 pace=0.45
+start=5252 J0 MPC + fault memory peak=1.56C over=  0s work=4.58 pace=0.41
+start=5252 J1 No action    peak=4.98C over=101s work=10.00 pace=1.00
+start=5252 J1 Rule-based   peak=2.93C over= 37s work=4.83 pace=0.44
+start=5252 J1 PI only      peak=3.07C over=101s work=6.38 pace=0.60
+start=5252 J1 PI + thermal guard peak=2.13C over=  4s work=4.58 pace=0.41
+start=5252 J1 Full (ours)  peak=2.01C over=  1s work=4.46 pace=0.40
+start=5252 J1 Full + Markov game peak=2.01C over=  1s work=4.46 pace=0.40
+start=5252 J1 MPC + fault memory peak=1.62C over=  0s work=4.45 pace=0.39
+start=5252 J2 No action    peak=4.98C over=101s work=10.00 pace=1.00
+start=5252 J2 Rule-based   peak=2.92C over= 22s work=4.62 pace=0.41
+start=5252 J2 PI only      peak=3.07C over=101s work=6.14 pace=0.58
+start=5252 J2 PI + thermal guard peak=2.15C over=  5s work=4.04 pace=0.35
+start=5252 J2 Full (ours)  peak=2.04C over=  6s work=3.92 pace=0.34
+start=5252 J2 Full + Markov game peak=2.04C over=  6s work=3.92 pace=0.34
+start=5252 J2 MPC + fault memory peak=1.60C over=  0s work=3.99 pace=0.34
+start=5252 J3 No action    peak=4.98C over=101s work=10.00 pace=1.00
+start=5252 J3 Rule-based   peak=2.63C over= 26s work=4.44 pace=0.39
+start=5252 J3 PI only      peak=2.87C over=101s work=6.25 pace=0.59
+start=5252 J3 PI + thermal guard peak=2.19C over=  4s work=3.96 pace=0.34
+start=5252 J3 Full (ours)  peak=2.01C over=  1s work=3.67 pace=0.31
+start=5252 J3 Full + Markov game peak=2.01C over=  1s work=3.67 pace=0.31
+start=5252 J3 MPC + fault memory peak=1.53C over=  0s work=3.94 pace=0.34
+start=5252 J4 No action    peak=4.98C over=101s work=10.00 pace=1.00
+start=5252 J4 Rule-based   peak=2.42C over= 13s work=3.69 pace=0.31
+start=5252 J4 PI only      peak=2.56C over=101s work=5.96 pace=0.56
+start=5252 J4 PI + thermal guard peak=2.16C over= 11s work=4.54 pace=0.40
+start=5252 J4 Full (ours)  peak=2.16C over= 11s work=4.54 pace=0.40
+start=5252 J4 Full + Markov game peak=2.16C over= 11s work=4.54 pace=0.40
+start=5252 J4 MPC + fault memory peak=1.64C over=  0s work=4.37 pace=0.39
+start=5252 J5 No action    peak=4.98C over=101s work=10.00 pace=1.00
+start=5252 J5 Rule-based   peak=3.22C over= 71s work=5.56 pace=0.52
+start=5252 J5 PI only      peak=3.64C over=101s work=6.83 pace=0.65
+start=5252 J5 PI + thermal guard peak=2.24C over=  5s work=3.71 pace=0.31
+start=5252 J5 Full (ours)  peak=2.01C over=  2s work=3.54 pace=0.30
+start=5252 J5 Full + Markov game peak=2.01C over=  2s work=3.54 pace=0.30
+start=5252 J5 MPC + fault memory peak=1.52C over=  0s work=3.86 pace=0.33
+start=5669 J0 No action    peak=4.98C over=101s work=10.00 pace=1.00
+start=5669 J0 Rule-based   peak=2.01C over=  1s work=4.90 pace=0.44
+start=5669 J0 PI only      peak=2.34C over= 94s work=5.91 pace=0.56
+start=5669 J0 PI + thermal guard peak=2.09C over=  2s work=4.48 pace=0.40
+start=5669 J0 Full (ours)  peak=1.97C over=  0s work=4.56 pace=0.41
+start=5669 J0 Full + Markov game peak=1.97C over=  0s work=4.56 pace=0.41
+start=5669 J0 MPC + fault memory peak=1.53C over=  0s work=4.51 pace=0.40
+start=5669 J1 No action    peak=4.98C over=101s work=10.00 pace=1.00
+start=5669 J1 Rule-based   peak=2.09C over=  6s work=4.60 pace=0.41
+start=5669 J1 PI only      peak=2.60C over= 72s work=5.98 pace=0.57
+start=5669 J1 PI + thermal guard peak=2.07C over=  1s work=4.39 pace=0.40
+start=5669 J1 Full (ours)  peak=1.97C over=  0s work=4.64 pace=0.42
+start=5669 J1 Full + Markov game peak=1.97C over=  0s work=4.64 pace=0.42
+start=5669 J1 MPC + fault memory peak=1.51C over=  0s work=4.53 pace=0.40
+start=5669 J2 No action    peak=4.98C over=101s work=10.00 pace=1.00
+start=5669 J2 Rule-based   peak=2.01C over=  1s work=4.16 pace=0.36
+start=5669 J2 PI only      peak=3.08C over=100s work=6.06 pace=0.58
+start=5669 J2 PI + thermal guard peak=2.17C over=  3s work=3.68 pace=0.32
+start=5669 J2 Full (ours)  peak=1.99C over=  0s work=3.89 pace=0.34
+start=5669 J2 Full + Markov game peak=1.99C over=  0s work=3.89 pace=0.34
+start=5669 J2 MPC + fault memory peak=1.58C over=  0s work=4.14 pace=0.36
+start=5669 J3 No action    peak=4.98C over=101s work=10.00 pace=1.00
+start=5669 J3 Rule-based   peak=2.03C over=  5s work=4.81 pace=0.43
+start=5669 J3 PI only      peak=2.49C over=100s work=5.85 pace=0.55
+start=5669 J3 PI + thermal guard peak=2.01C over=  1s work=3.88 pace=0.34
+start=5669 J3 Full (ours)  peak=2.01C over=  1s work=3.64 pace=0.31
+start=5669 J3 Full + Markov game peak=2.01C over=  1s work=3.64 pace=0.31
+start=5669 J3 MPC + fault memory peak=1.57C over=  0s work=3.92 pace=0.34
+start=5669 J4 No action    peak=4.98C over=101s work=10.00 pace=1.00
+start=5669 J4 Rule-based   peak=2.51C over= 24s work=4.90 pace=0.44
+start=5669 J4 PI only      peak=2.58C over=100s work=5.85 pace=0.56
+start=5669 J4 PI + thermal guard peak=2.00C over=  1s work=4.05 pace=0.36
+start=5669 J4 Full (ours)  peak=2.00C over=  1s work=4.18 pace=0.37
+start=5669 J4 Full + Markov game peak=2.00C over=  1s work=4.18 pace=0.37
+start=5669 J4 MPC + fault memory peak=1.56C over=  0s work=4.26 pace=0.37
+start=5669 J5 No action    peak=4.98C over=101s work=10.00 pace=1.00
+start=5669 J5 Rule-based   peak=2.47C over= 41s work=4.69 pace=0.42
+start=5669 J5 PI only      peak=2.61C over=100s work=5.84 pace=0.55
+start=5669 J5 PI + thermal guard peak=2.02C over=  3s work=3.61 pace=0.31
+start=5669 J5 Full (ours)  peak=2.02C over=  2s work=3.56 pace=0.30
+start=5669 J5 Full + Markov game peak=2.02C over=  2s work=3.56 pace=0.30
+start=5669 J5 MPC + fault memory peak=1.53C over=  0s work=3.87 pace=0.33
+start=6086 J0 No action    peak=4.98C over=101s work=10.00 pace=1.00
+start=6086 J0 Rule-based   peak=2.01C over=  1s work=3.54 pace=0.29
+start=6086 J0 PI only      peak=2.24C over= 91s work=5.73 pace=0.54
+start=6086 J0 PI + thermal guard peak=2.01C over=  1s work=4.82 pace=0.44
+start=6086 J0 Full (ours)  peak=2.01C over=  1s work=4.73 pace=0.43
+start=6086 J0 Full + Markov game peak=2.01C over=  1s work=4.73 pace=0.43
+start=6086 J0 MPC + fault memory peak=1.61C over=  0s work=4.55 pace=0.41
+start=6086 J1 No action    peak=4.98C over=101s work=10.00 pace=1.00
+start=6086 J1 Rule-based   peak=2.01C over=  1s work=3.48 pace=0.29
+start=6086 J1 PI only      peak=2.27C over= 70s work=5.76 pace=0.54
+start=6086 J1 PI + thermal guard peak=1.98C over=  0s work=4.64 pace=0.42
+start=6086 J1 Full (ours)  peak=1.97C over=  0s work=4.63 pace=0.42
+start=6086 J1 Full + Markov game peak=1.97C over=  0s work=4.63 pace=0.42
+start=6086 J1 MPC + fault memory peak=1.58C over=  0s work=4.49 pace=0.40
+start=6086 J2 No action    peak=4.98C over=101s work=10.00 pace=1.00
+start=6086 J2 Rule-based   peak=2.01C over=  2s work=3.78 pace=0.32
+start=6086 J2 PI only      peak=2.31C over= 91s work=5.60 pace=0.52
+start=6086 J2 PI + thermal guard peak=2.01C over=  1s work=4.14 pace=0.36
+start=6086 J2 Full (ours)  peak=2.01C over=  1s work=4.24 pace=0.37
+start=6086 J2 Full + Markov game peak=2.01C over=  1s work=4.24 pace=0.37
+start=6086 J2 MPC + fault memory peak=1.59C over=  0s work=4.14 pace=0.36
+start=6086 J3 No action    peak=4.98C over=101s work=10.00 pace=1.00
+start=6086 J3 Rule-based   peak=2.01C over=  1s work=3.81 pace=0.32
+start=6086 J3 PI only      peak=2.42C over= 95s work=5.75 pace=0.54
+start=6086 J3 PI + thermal guard peak=2.03C over=  2s work=4.04 pace=0.35
+start=6086 J3 Full (ours)  peak=2.03C over=  2s work=3.87 pace=0.33
+start=6086 J3 Full + Markov game peak=2.03C over=  2s work=3.87 pace=0.33
+start=6086 J3 MPC + fault memory peak=1.52C over=  0s work=4.01 pace=0.35
+start=6086 J4 No action    peak=4.98C over=101s work=10.00 pace=1.00
+start=6086 J4 Rule-based   peak=2.01C over=  1s work=3.41 pace=0.28
+start=6086 J4 PI only      peak=2.28C over= 98s work=5.75 pace=0.54
+start=6086 J4 PI + thermal guard peak=2.00C over=  0s work=4.68 pace=0.42
+start=6086 J4 Full (ours)  peak=2.00C over=  0s work=4.64 pace=0.42
+start=6086 J4 Full + Markov game peak=2.00C over=  0s work=4.64 pace=0.42
+start=6086 J4 MPC + fault memory peak=1.60C over=  0s work=4.46 pace=0.40
+start=6086 J5 No action    peak=4.98C over=101s work=10.00 pace=1.00
+start=6086 J5 Rule-based   peak=2.54C over= 21s work=4.54 pace=0.40
+start=6086 J5 PI only      peak=2.60C over=100s work=5.83 pace=0.55
+start=6086 J5 PI + thermal guard peak=2.04C over=  3s work=3.91 pace=0.34
+start=6086 J5 Full (ours)  peak=2.03C over=  4s work=3.70 pace=0.31
+start=6086 J5 Full + Markov game peak=2.03C over=  4s work=3.70 pace=0.31
+start=6086 J5 MPC + fault memory peak=1.57C over=  0s work=3.88 pace=0.33
+start=6504 J0 No action    peak=4.98C over=101s work=10.00 pace=1.00
+start=6504 J0 Rule-based   peak=2.61C over= 18s work=4.80 pace=0.43
+start=6504 J0 PI only      peak=3.10C over= 99s work=6.27 pace=0.59
+start=6504 J0 PI + thermal guard peak=2.06C over=  7s work=4.85 pace=0.44
+start=6504 J0 Full (ours)  peak=2.08C over=  7s work=4.73 pace=0.43
+start=6504 J0 Full + Markov game peak=2.08C over=  7s work=4.73 pace=0.43
+start=6504 J0 MPC + fault memory peak=1.63C over=  0s work=4.63 pace=0.41
+start=6504 J1 No action    peak=4.98C over=101s work=10.00 pace=1.00
+start=6504 J1 Rule-based   peak=2.18C over=  9s work=4.57 pace=0.41
+start=6504 J1 PI only      peak=2.80C over= 90s work=6.11 pace=0.58
+start=6504 J1 PI + thermal guard peak=2.24C over=  6s work=4.49 pace=0.40
+start=6504 J1 Full (ours)  peak=2.07C over=  6s work=4.74 pace=0.43
+start=6504 J1 Full + Markov game peak=2.07C over=  6s work=4.74 pace=0.43
+start=6504 J1 MPC + fault memory peak=1.65C over=  0s work=4.34 pace=0.38
+start=6504 J2 No action    peak=4.98C over=101s work=10.00 pace=1.00
+start=6504 J2 Rule-based   peak=2.01C over=  1s work=4.23 pace=0.37
+start=6504 J2 PI only      peak=2.49C over= 96s work=5.72 pace=0.53
+start=6504 J2 PI + thermal guard peak=2.15C over=  5s work=4.28 pace=0.38
+start=6504 J2 Full (ours)  peak=2.07C over=  6s work=4.18 pace=0.37
+start=6504 J2 Full + Markov game peak=2.07C over=  6s work=4.18 pace=0.37
+start=6504 J2 MPC + fault memory peak=1.61C over=  0s work=3.97 pace=0.34
+start=6504 J3 No action    peak=4.98C over=101s work=10.00 pace=1.00
+start=6504 J3 Rule-based   peak=2.10C over=  3s work=3.79 pace=0.32
+start=6504 J3 PI only      peak=2.77C over= 98s work=6.01 pace=0.57
+start=6504 J3 PI + thermal guard peak=2.01C over=  1s work=3.97 pace=0.34
+start=6504 J3 Full (ours)  peak=1.98C over=  0s work=3.72 pace=0.32
+start=6504 J3 Full + Markov game peak=1.98C over=  0s work=3.72 pace=0.32
+start=6504 J3 MPC + fault memory peak=1.49C over=  0s work=3.52 pace=0.29
+start=6504 J4 No action    peak=4.98C over=101s work=10.00 pace=1.00
+start=6504 J4 Rule-based   peak=2.11C over=  4s work=3.41 pace=0.28
+start=6504 J4 PI only      peak=2.30C over= 98s work=5.76 pace=0.54
+start=6504 J4 PI + thermal guard peak=2.04C over=  4s work=4.59 pace=0.41
+start=6504 J4 Full (ours)  peak=2.04C over=  4s work=4.59 pace=0.41
+start=6504 J4 Full + Markov game peak=2.04C over=  4s work=4.59 pace=0.41
+start=6504 J4 MPC + fault memory peak=1.58C over=  0s work=4.08 pace=0.35
+start=6504 J5 No action    peak=4.98C over=101s work=10.00 pace=1.00
+start=6504 J5 Rule-based   peak=2.96C over= 58s work=5.15 pace=0.47
+start=6504 J5 PI only      peak=3.40C over= 99s work=6.56 pace=0.63
+start=6504 J5 PI + thermal guard peak=1.99C over=  0s work=3.86 pace=0.33
+start=6504 J5 Full (ours)  peak=1.99C over=  0s work=3.56 pace=0.30
+start=6504 J5 Full + Markov game peak=1.99C over=  0s work=3.56 pace=0.30
+start=6504 J5 MPC + fault memory peak=1.50C over=  0s work=3.82 pace=0.33
+start=6921 J0 No action    peak=4.98C over=101s work=10.00 pace=1.00
+start=6921 J0 Rule-based   peak=2.31C over=  8s work=4.09 pace=0.35
+start=6921 J0 PI only      peak=2.43C over= 82s work=5.77 pace=0.54
+start=6921 J0 PI + thermal guard peak=2.27C over=  4s work=4.82 pace=0.44
+start=6921 J0 Full (ours)  peak=2.01C over=  1s work=4.73 pace=0.43
+start=6921 J0 Full + Markov game peak=2.01C over=  1s work=4.73 pace=0.43
+start=6921 J0 MPC + fault memory peak=1.64C over=  0s work=4.34 pace=0.38
+start=6921 J1 No action    peak=4.98C over=101s work=10.00 pace=1.00
+start=6921 J1 Rule-based   peak=2.27C over= 12s work=4.58 pace=0.41
+start=6921 J1 PI only      peak=2.42C over= 84s work=5.85 pace=0.55
+start=6921 J1 PI + thermal guard peak=2.15C over=  8s work=4.36 pace=0.39
+start=6921 J1 Full (ours)  peak=2.07C over=  3s work=4.65 pace=0.42
+start=6921 J1 Full + Markov game peak=2.07C over=  3s work=4.65 pace=0.42
+start=6921 J1 MPC + fault memory peak=1.60C over=  0s work=4.41 pace=0.39
+start=6921 J2 No action    peak=4.98C over=101s work=10.00 pace=1.00
+start=6921 J2 Rule-based   peak=2.17C over=  6s work=4.25 pace=0.37
+start=6921 J2 PI only      peak=2.39C over= 92s work=5.68 pace=0.53
+start=6921 J2 PI + thermal guard peak=2.26C over=  9s work=4.33 pace=0.38
+start=6921 J2 Full (ours)  peak=2.00C over=  0s work=3.94 pace=0.34
+start=6921 J2 Full + Markov game peak=2.00C over=  0s work=3.94 pace=0.34
+start=6921 J2 MPC + fault memory peak=1.57C over=  0s work=3.99 pace=0.34
+start=6921 J3 No action    peak=4.98C over=101s work=10.00 pace=1.00
+start=6921 J3 Rule-based   peak=2.01C over=  1s work=3.85 pace=0.33
+start=6921 J3 PI only      peak=2.41C over= 94s work=5.72 pace=0.54
+start=6921 J3 PI + thermal guard peak=2.01C over=  1s work=4.13 pace=0.36
+start=6921 J3 Full (ours)  peak=2.00C over=  0s work=3.70 pace=0.32
+start=6921 J3 Full + Markov game peak=2.00C over=  0s work=3.70 pace=0.32
+start=6921 J3 MPC + fault memory peak=1.59C over=  0s work=3.63 pace=0.31
+start=6921 J4 No action    peak=4.98C over=101s work=10.00 pace=1.00
+start=6921 J4 Rule-based   peak=2.60C over= 19s work=3.90 pace=0.33
+start=6921 J4 PI only      peak=2.55C over= 99s work=5.90 pace=0.56
+start=6921 J4 PI + thermal guard peak=2.00C over=  1s work=4.14 pace=0.36
+start=6921 J4 Full (ours)  peak=1.99C over=  0s work=4.14 pace=0.36
+start=6921 J4 Full + Markov game peak=1.99C over=  0s work=4.14 pace=0.36
+start=6921 J4 MPC + fault memory peak=1.58C over=  0s work=4.22 pace=0.37
+start=6921 J5 No action    peak=4.98C over=101s work=10.00 pace=1.00
+start=6921 J5 Rule-based   peak=2.68C over= 27s work=4.56 pace=0.41
+start=6921 J5 PI only      peak=2.75C over=101s work=6.04 pace=0.57
+start=6921 J5 PI + thermal guard peak=2.15C over=  5s work=3.98 pace=0.35
+start=6921 J5 Full (ours)  peak=2.15C over=  5s work=3.64 pace=0.31
+start=6921 J5 Full + Markov game peak=2.15C over=  5s work=3.64 pace=0.31
+start=6921 J5 MPC + fault memory peak=1.61C over=  0s work=3.87 pace=0.33
+
+                    peak_rise_C       overheat_s        false_all_clear_s       work_cycles       mean_pace      
+                          mean   std       mean    std              mean   std        mean   std      mean   std
+strategy                                                                                                        
+No action                 4.98  0.00     101.00   0.00              1.30  2.47       10.00  0.00      1.00  0.00
+Rule-based                2.36  0.37      16.00  18.15              2.13  3.36        4.33  0.56      0.38  0.06
+PI only                   2.67  0.37      94.73   8.15              0.67  1.92        5.98  0.29      0.56  0.03
+PI + thermal guard        2.10  0.09       3.47   2.84              4.00  4.03        4.26  0.38      0.38  0.04
+Full (ours)               2.03  0.05       2.27   2.74              0.07  0.25        4.19  0.46      0.37  0.05
+Full + Markov game        2.03  0.05       2.27   2.74              0.07  0.25        4.19  0.46      0.37  0.05
+MPC + fault memory        1.58  0.04       0.00   0.00              0.00  0.00        4.16  0.30      0.36  0.03

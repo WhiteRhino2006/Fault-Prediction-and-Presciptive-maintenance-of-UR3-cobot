@@ -1,0 +1,152 @@
+﻿7355 rows | train 4045 | val 1103 | test 2207
+Building temporal / causal / game features (~10 min, cached afterwards) ...
+early-warning rows: train 3782 val 1027 test 2028 | test positive rate 0.324
+  Raw sensors      LogReg       F1=0.475 ROC-AUC=0.534 PR-AUC=0.365 warned=1.00
+  Raw sensors      RandomForest F1=0.498 ROC-AUC=0.627 PR-AUC=0.438 warned=1.00
+  Raw sensors      XGBoost      F1=0.499 ROC-AUC=0.630 PR-AUC=0.436 warned=1.00
+  Temporal         LogReg       F1=0.545 ROC-AUC=0.656 PR-AUC=0.412 warned=0.96
+  Temporal         RandomForest F1=0.537 ROC-AUC=0.686 PR-AUC=0.505 warned=1.00
+  Temporal         XGBoost      F1=0.544 ROC-AUC=0.675 PR-AUC=0.467 warned=1.00
+  Temporal+Causal  XGBoost      F1=0.549 ROC-AUC=0.692 PR-AUC=0.496 warned=1.00
+  Temporal+Game    XGBoost      F1=0.563 ROC-AUC=0.695 PR-AUC=0.476 warned=0.97
+  Full (T+C+G)     LogReg       F1=0.516 ROC-AUC=0.623 PR-AUC=0.387 warned=1.00
+  Full (T+C+G)     RandomForest F1=0.528 ROC-AUC=0.693 PR-AUC=0.528 warned=1.00
+  Full (T+C+G)     XGBoost      F1=0.548 ROC-AUC=0.696 PR-AUC=0.502 warned=1.00
+  Temporal+History XGBoost      F1=0.500 ROC-AUC=0.642 PR-AUC=0.446 warned=0.92
+  Full+History     LogReg       F1=0.518 ROC-AUC=0.590 PR-AUC=0.364 warned=0.99
+  Full+History     RandomForest F1=0.516 ROC-AUC=0.689 PR-AUC=0.524 warned=1.00
+  Full+History     XGBoost      F1=0.514 ROC-AUC=0.638 PR-AUC=0.441 warned=0.99
+Root cause experiment: {'trials': 120, 'granger_root_accuracy': 0.9416666666666667, 'correlation_root_accuracy': 0.016666666666666666, 'chance': 0.16666666666666666}
+
+         features        model  precision  recall    f1  roc_auc  pr_auc  early_warning_rate  mean_lead_time_s
+     Raw sensors       LogReg      0.323   0.893 0.475    0.534   0.365               1.000             9.772
+     Raw sensors RandomForest      0.335   0.971 0.498    0.627   0.438               1.000             9.785
+     Raw sensors      XGBoost      0.340   0.935 0.499    0.630   0.436               1.000             9.722
+        Temporal       LogReg      0.414   0.795 0.545    0.656   0.412               0.962             9.053
+        Temporal RandomForest      0.388   0.875 0.537    0.686   0.505               1.000             9.468
+        Temporal      XGBoost      0.387   0.913 0.544    0.675   0.467               1.000             9.620
+ Temporal+Causal      XGBoost      0.386   0.953 0.549    0.692   0.496               1.000             9.785
+   Temporal+Game      XGBoost      0.424   0.834 0.563    0.695   0.476               0.975             9.558
+    Full (T+C+G)       LogReg      0.388   0.772 0.516    0.623   0.387               1.000             8.747
+    Full (T+C+G) RandomForest      0.367   0.941 0.528    0.693   0.528               1.000             9.633
+    Full (T+C+G)      XGBoost      0.388   0.932 0.548    0.696   0.502               1.000             9.684
+Temporal+History      XGBoost      0.369   0.776 0.500    0.642   0.446               0.924             9.233
+    Full+History       LogReg      0.366   0.884 0.518    0.590   0.364               0.987             9.449
+    Full+History RandomForest      0.352   0.965 0.516    0.689   0.524               1.000             9.797
+    Full+History      XGBoost      0.362   0.889 0.514    0.638   0.441               0.987             9.538
+
+Done in 286s. Outputs in C:\Users\Raghav Jain\Desktop\final year project\outputs
+nodes=6, node features=27, global features=3
+  GAT (no causal prior)    F1=0.391 ROC-AUC=0.613 PR-AUC=0.424
+  Causal-GAT (ours)        F1=0.517 ROC-AUC=0.664 PR-AUC=0.454
+learned causal-prior weights beta (layer1, layer2): [0.881192147731781, 0.6694003343582153]
+
+                                  features                 model    f1  roc_auc  pr_auc
+                              Raw sensors                LogReg 0.475    0.534   0.365
+                              Raw sensors          RandomForest 0.498    0.627   0.438
+                              Raw sensors               XGBoost 0.499    0.630   0.436
+                                 Temporal                LogReg 0.545    0.656   0.412
+                                 Temporal          RandomForest 0.537    0.686   0.505
+                                 Temporal               XGBoost 0.544    0.675   0.467
+                          Temporal+Causal               XGBoost 0.549    0.692   0.496
+                            Temporal+Game               XGBoost 0.563    0.695   0.476
+                             Full (T+C+G)                LogReg 0.516    0.623   0.387
+                             Full (T+C+G)          RandomForest 0.528    0.693   0.528
+                             Full (T+C+G)               XGBoost 0.548    0.696   0.502
+                         Temporal+History               XGBoost 0.500    0.642   0.446
+                             Full+History                LogReg 0.518    0.590   0.364
+                             Full+History          RandomForest 0.516    0.689   0.524
+                             Full+History               XGBoost 0.514    0.638   0.441
+               Temporal (per-joint nodes) GAT (no causal prior) 0.391    0.613   0.424
+Temporal (per-joint nodes) + causal graph     Causal-GAT (ours) 0.517    0.664   0.454
+  LSTM  F1=0.574 ROC-AUC=0.715 PR-AUC=0.506
+  GRU   F1=0.545 ROC-AUC=0.662 PR-AUC=0.444
+S1 clean {'Granger (ours)': '0.95', 'Granger L=2': '0.98', 'Liang-Kleeman IF': '0.31', 'Most abnormal': '0.97', 'Correlation': '0.06'}
+S2 mixed lags {'Granger (ours)': '0.85', 'Granger L=2': '0.62', 'Liang-Kleeman IF': '0.20', 'Most abnormal': '0.96', 'Correlation': '0.05'}
+S3 weak fault {'Granger (ours)': '0.29', 'Granger L=2': '0.31', 'Liang-Kleeman IF': '0.15', 'Most abnormal': '0.86', 'Correlation': '0.07'}
+S4 nonlinear {'Granger (ours)': '0.69', 'Granger L=2': '0.54', 'Liang-Kleeman IF': '0.18', 'Most abnormal': '1.00', 'Correlation': '0.05'}
+S5 confounded {'Granger (ours)': '0.76', 'Granger L=2': '0.47', 'Liang-Kleeman IF': '0.14', 'Most abnormal': '0.75', 'Correlation': '0.05'}
+S6 same-second {'Granger (ours)': '0.14', 'Granger L=2': '0.14', 'Liang-Kleeman IF': '0.19', 'Most abnormal': '1.00', 'Correlation': '0.29'}
+S7 victims louder {'Granger (ours)': '0.97', 'Granger L=2': '0.85', 'Liang-Kleeman IF': '0.33', 'Most abnormal': '0.00', 'Correlation': '0.08'}
+
+Accuracy (chance = 0.17), 100 trials per scenario:
+
+method             Correlation  Granger (ours)  Granger L=2  Liang-Kleeman IF  Most abnormal
+scenario                                                                                    
+S1 clean                  0.06            0.95         0.98              0.31           0.97
+S2 mixed lags             0.05            0.85         0.62              0.20           0.96
+S3 weak fault             0.07            0.29         0.31              0.15           0.86
+S4 nonlinear              0.05            0.69         0.54              0.18           1.00
+S5 confounded             0.05            0.76         0.47              0.14           0.75
+S6 same-second            0.29            0.14         0.14              0.19           1.00
+S7 victims louder         0.08            0.97         0.85              0.33           0.00
+start=5252 J0 No action    peak=4.98C over=101s work=10.00 pace=1.00
+start=5252 J0 Rule-based   peak=2.90C over= 40s work=4.83 pace=0.44
+start=5252 J0 PI only      peak=3.34C over= 94s work=6.38 pace=0.60
+start=5252 J0 PI + thermal guard peak=2.22C over=  6s work=4.96 pace=0.45
+start=5252 J0 Full (ours)  peak=2.16C over=  3s work=4.96 pace=0.45
+start=5252 J1 No action    peak=4.98C over=101s work=10.00 pace=1.00
+start=5252 J1 Rule-based   peak=2.93C over= 37s work=4.83 pace=0.44
+start=5252 J1 PI only      peak=3.07C over=101s work=6.38 pace=0.60
+start=5252 J1 PI + thermal guard peak=2.13C over=  4s work=4.58 pace=0.41
+start=5252 J1 Full (ours)  peak=2.01C over=  1s work=4.46 pace=0.40
+start=5252 J2 No action    peak=4.98C over=101s work=10.00 pace=1.00
+start=5252 J2 Rule-based   peak=2.92C over= 22s work=4.62 pace=0.41
+start=5252 J2 PI only      peak=3.07C over=101s work=6.14 pace=0.58
+start=5252 J2 PI + thermal guard peak=2.15C over=  5s work=4.04 pace=0.35
+start=5252 J2 Full (ours)  peak=2.04C over=  6s work=3.92 pace=0.34
+start=5252 J3 No action    peak=4.98C over=101s work=10.00 pace=1.00
+start=5252 J3 Rule-based   peak=2.63C over= 26s work=4.44 pace=0.39
+start=5252 J3 PI only      peak=2.87C over=101s work=6.25 pace=0.59
+start=5252 J3 PI + thermal guard peak=2.19C over=  4s work=3.96 pace=0.34
+start=5252 J3 Full (ours)  peak=2.01C over=  1s work=3.71 pace=0.31
+start=5252 J4 No action    peak=4.98C over=101s work=10.00 pace=1.00
+start=5252 J4 Rule-based   peak=2.42C over= 13s work=3.69 pace=0.31
+start=5252 J4 PI only      peak=2.56C over=101s work=5.96 pace=0.56
+start=5252 J4 PI + thermal guard peak=2.16C over= 11s work=4.54 pace=0.40
+start=5252 J4 Full (ours)  peak=2.16C over= 11s work=4.54 pace=0.40
+start=5252 J5 No action    peak=4.98C over=101s work=10.00 pace=1.00
+start=5252 J5 Rule-based   peak=3.22C over= 71s work=5.56 pace=0.52
+start=5252 J5 PI only      peak=3.64C over=101s work=6.83 pace=0.65
+start=5252 J5 PI + thermal guard peak=2.24C over=  5s work=3.71 pace=0.31
+start=5252 J5 Full (ours)  peak=2.01C over=  2s work=3.67 pace=0.31
+start=6086 J0 No action    peak=4.98C over=101s work=10.00 pace=1.00
+start=6086 J0 Rule-based   peak=2.01C over=  1s work=3.79 pace=0.32
+start=6086 J0 PI only      peak=2.25C over= 94s work=5.76 pace=0.54
+start=6086 J0 PI + thermal guard peak=2.02C over=  1s work=4.72 pace=0.42
+start=6086 J0 Full (ours)  peak=2.02C over=  1s work=4.68 pace=0.42
+start=6086 J1 No action    peak=4.98C over=101s work=10.00 pace=1.00
+start=6086 J1 Rule-based   peak=2.01C over=  1s work=3.51 pace=0.29
+start=6086 J1 PI only      peak=2.27C over= 79s work=5.76 pace=0.54
+start=6086 J1 PI + thermal guard peak=1.98C over=  0s work=4.60 pace=0.41
+start=6086 J1 Full (ours)  peak=1.98C over=  0s work=4.60 pace=0.41
+start=6086 J2 No action    peak=4.98C over=101s work=10.00 pace=1.00
+start=6086 J2 Rule-based   peak=2.01C over=  1s work=3.64 pace=0.31
+start=6086 J2 PI only      peak=2.30C over= 88s work=5.57 pace=0.52
+start=6086 J2 PI + thermal guard peak=2.03C over=  2s work=4.18 pace=0.37
+start=6086 J2 Full (ours)  peak=2.03C over=  2s work=4.28 pace=0.38
+start=6086 J3 No action    peak=4.98C over=101s work=10.00 pace=1.00
+start=6086 J3 Rule-based   peak=2.04C over=  2s work=3.89 pace=0.33
+start=6086 J3 PI only      peak=2.43C over= 96s work=5.76 pace=0.54
+start=6086 J3 PI + thermal guard peak=2.08C over=  4s work=4.17 pace=0.36
+start=6086 J3 Full (ours)  peak=2.03C over=  2s work=3.88 pace=0.33
+start=6086 J4 No action    peak=4.98C over=101s work=10.00 pace=1.00
+start=6086 J4 Rule-based   peak=2.05C over=  6s work=3.87 pace=0.33
+start=6086 J4 PI only      peak=2.28C over= 98s work=5.76 pace=0.54
+start=6086 J4 PI + thermal guard peak=2.01C over=  2s work=4.23 pace=0.37
+start=6086 J4 Full (ours)  peak=2.00C over=  1s work=4.64 pace=0.42
+start=6086 J5 No action    peak=4.98C over=101s work=10.00 pace=1.00
+start=6086 J5 Rule-based   peak=2.32C over= 10s work=4.14 pace=0.36
+start=6086 J5 PI only      peak=2.70C over=100s work=5.86 pace=0.55
+start=6086 J5 PI + thermal guard peak=2.04C over=  4s work=3.91 pace=0.34
+start=6086 J5 Full (ours)  peak=2.03C over=  4s work=3.70 pace=0.31
+
+                    peak_rise_C       overheat_s        false_all_clear_s       work_cycles       mean_pace      
+                          mean   std       mean    std              mean   std        mean   std      mean   std
+strategy                                                                                                        
+No action                 4.98  0.00     101.00   0.00              1.25  3.14       10.00  0.00      1.00  0.00
+Rule-based                2.45  0.45      19.17  21.48              2.67  3.80        4.23  0.62      0.37  0.07
+PI only                   2.73  0.47      96.17   6.78              1.17  2.86        6.03  0.37      0.57  0.04
+PI + thermal guard        2.10  0.09       4.00   2.83              4.67  5.35        4.30  0.38      0.38  0.04
+Full (ours)               2.04  0.06       2.83   3.04              0.17  0.39        4.25  0.46      0.37  0.05
+ALLDONE
